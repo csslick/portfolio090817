@@ -1,0 +1,181 @@
+/* style.css */
+body{
+  /* font-family: "맑은 고딕", sans-serif; */
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #666;
+  font-size: 100%;
+  text-align: center;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: #666;
+}
+.img-circle{
+  border-radius: 50%;
+}
+.img-responsive{
+  /* max-width: 100%; */
+  width: 100%;
+}
+.mt-4{margin-top: 40px;}
+
+header{
+  display: flex;
+  height: 650px;
+  background: #ccc;
+  justify-content: center;
+  align-items: center;
+}
+header h1{
+  font-size: 4em;
+}
+.line{
+  display: inline-block;
+  width: 5em;
+  height: 1px;
+  border-bottom: 1px solid #666;
+  vertical-align: middle;
+  margin: 2em;
+}
+header p{
+  font-size: 20px;
+}
+.btn{
+  display: inline-block;
+  border: 1px solid #666;
+  padding: 14px 40px;
+  margin-top: 3em;
+}
+.btn:hover{
+  background: #000;
+  color: #fff;
+}
+
+/* 메인메뉴 */
+#main-menu{
+  position: fixed;
+  left: 0; right: 0; top: 0;
+  background: #f6f6f6;
+  padding: 0px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  z-index: 99;
+}
+#main-menu.sticky{
+  position: fixed;
+  left: 0;right: 0;
+  top: 0;
+}
+#main-menu .container{
+  display: none;
+}
+#main-menu ul li a{
+  display: block;
+  padding: 15px;
+  text-transform: capitalize;
+  font-weight: lighter;
+}
+#main-menu ul li a:hover{
+  color: #000;
+  text-shadow: 1px 1px 2px rgba(0,0,0, 0.2);
+}
+#toggle{
+  position: fixed;
+  right: 20px; top: 20px;
+  /* display: block; */
+  width: 32px; height: 32px;
+  background:transparent;
+  border: none;
+  outline:none;
+}
+#toggle img{ width: 100%;}
+
+@media (min-width: 768px){
+  #main-menu{
+    position: relative;
+    padding: 5px;
+  }
+  #main-menu .container{
+    display: block !important;
+  }
+  #main-menu ul li{
+    display: inline-block;
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+  #toggle{
+    display: none;
+  }
+} /* end media */
+
+
+section{
+  padding: 100px 0;
+}
+section h2{
+  font-size: 30px;
+}
+
+#about h3{ 
+  font-size: 20px;
+  font-weight: bold;
+}
+#about p{
+  padding: 0 40px;
+  margin: 2em 0;
+}
+
+@media (min-width:768px){
+  #about p{
+    padding: 0 80px;
+  }
+}
+
+#portfolio{
+  background: #f6f6f6;
+}
+.row li{
+  /* border: 1px solid red; */
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+}
+.row li img{ display: block;}
+.row li a{display: block;}
+
+/* contact */
+.contact-form{
+  /* border: 1px solid red; */
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width:769px){
+  .contact-form{
+    /* border: 1px solid red; */
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+.contact-form #name,
+.contact-form #email,
+.contact-form #message{
+  width: 100%;
+  padding: 8px 16px;
+  border: 1px solid #666;
+  font-size: 16px;
+}
+.contact-form #message{
+
+}
+.contact-form button{ font-size: 16px;}
+
+footer{
+  background: #f6f6f6;
+  padding: 40px 0;
+  font-size: 14px;
+  font-weight: lighter;
+}
